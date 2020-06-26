@@ -1,6 +1,9 @@
-![](./screencapture.jpg)
+# Resort Project
+[](./screencapture.jpg)
+##
 ![](./screencapture-rooms.jpg)
-![](./screencapturefeatured.jpg)
+##
+![](./screencapture-featured.jpg)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
