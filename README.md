@@ -1,5 +1,5 @@
 # Resort Project
-[](./screencapture.jpg)
+![](./screencapture.jpg)
 ##
 ![](./screencapture-rooms.jpg)
 ##
