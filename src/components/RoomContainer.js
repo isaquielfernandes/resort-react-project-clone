@@ -1,7 +1,7 @@
 import React from "react";
 import { withRoomConsumer } from "../context";
 import Loading from "./Loading";
-import RoomsFilter from "./RoomsFilter";
+import RoomFilter from "./RoomFilter";
 import RoomsList from "./RoomsList";
 
 function RoomContainer({context}) {
@@ -12,7 +12,7 @@ function RoomContainer({context}) {
     }
     return (
         <>
-          <RoomsFilter rooms={rooms}/>
+          <RoomFilter rooms={rooms}/>
           <RoomsList rooms={sortedRooms}/>
         </>
     );

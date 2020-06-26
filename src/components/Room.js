@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import { Link } from " react-router-dom";
+import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import defaultImg from "../images/room-1.jpeg";
 
@@ -9,7 +9,7 @@ const Room = memo(({room}) => {
     return (
          <article className="room">
               <div className="img-container">
-                 <img src={imagens[0] || defaultImg} alt="" />
+                 <img src={images[0] || defaultImg} alt="" />
                  <div className="price-top">
                      <h6>${price}</h6>
                      <p>per night</p>
@@ -29,7 +29,7 @@ Room.propTypes = {
         slug: PropTypes.string.isRequired,
         images: PropTypes.arrayOf(PropTypes.string).isRequired,
         price: PropTypes.number.isRequired
-    });
+    })
 };
 
 export default Room;

@@ -1,8 +1,8 @@
 import React from "react";
 import Hero from "../components/Hero";
 import Banner from "../components/Banner";
-import RoomsContainer from "../components/RoomsContainer";
-import { Link } from " react-router-dom";
+import RoomsContainer from "../components/RoomContainer";
+import { Link } from "react-router-dom";
 
 const Rooms = () => {
     return(
@@ -13,7 +13,7 @@ const Rooms = () => {
                      return home
                  </Link>
              </Banner>
-         </Hero/>
+         </Hero>
          <RoomsContainer/>
        </>
     );
