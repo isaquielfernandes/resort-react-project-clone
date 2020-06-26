@@ -3,8 +3,8 @@ import items from "./data";
 
 const RoomContext = React.createContext();
 
-class RoomProvider extends Component {
-
+export default class RoomProvider extends Component {
+ 
     state = {
         rooms:[],
         sortedRooms: [],
@@ -89,7 +89,7 @@ class RoomProvider extends Component {
         tempRooms = tempRooms.filter(room => room.price <= price);
 
         //filter by size 
-        tempRooms = tempRooms.filterl(room => room.size >= minSize && room.size <= maxSize);
+        tempRooms = tempRooms.filter(room => room.size >= minSize && room.size <= maxSize);
 
         //filter by breackfast
         if(breakfast) {
@@ -109,15 +109,13 @@ class RoomProvider extends Component {
     render() {
         return (
             <RoomContext.Provider
-                value={{...this.state, getRoom: this.getRom, handleChange: this.handleChange}}
+                value={{...this.state, getRoom: this.getRoom, handleChange: this.handleChange}}
              >
                  {this.props.children}   
             </RoomContext.Provider>
         );
     }
 }
-
-export default RoomProvider;
 
 const RoomConsumer = RoomContext.Consumer;
 
